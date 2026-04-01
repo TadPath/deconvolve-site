@@ -1,0 +1,123 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<HEAD>
+<link rel="icon" href="./favicon.png" type="image/png" />
+<link rel="shortcut icon" href="./favicon.png" type="image/png" />
+<TITLE>Deconvolution Software</TITLE>
+<META NAME="Description" CONTENT="Deconvolution tutorial and free software for astronomy, microscopy, photography, forensics, spectra, audio and more.">
+<META NAME="Keywords" CONTENT="deconvolution, deconvolution software, deconvolve, deblur, de-blur, deblurring, de-blurring, camera shake, freeware, blind deconvolution, spatially variant PSF, point spread function, PSF, convolution, digital image, microscopy, astronomy, optical sectioning microscopy, confocal microscopy, deconvolution microscopy, volume visualisation, haze removal, forensic, photography, Biggs, Lucy-Richardson, Landweber, maximum entropy, van Cittert, confocal, Tadrous, BiaQIm, Biaram, FATCAM, Bialith">
+<link rel="icon" href="./favicon.png" /> 
+<link rel="shortcut icon" href="./favicon.png" /> 
+</HEAD>
+
+<BODY BGCOLOR="#C0C0FF" TEXT="#000000" LINK="#660000" ALINK="#FF0000" VLINK="#800080">
+
+<TABLE WIDTH="640" BORDER="0" CELLPADDING="4" CELLSPACING="0">
+ <TD ALIGN="left" VALIGN="TOP"><LEFT>
+  <IMG SRC="./Images/Mascot64.jpg" BORDER=0 ALT="Deconvolution software"><BR>
+  <FONT FACE="Times New Roman" SIZE="4" COLOR="#000000"><B>Main Menu</B></FONT><P>
+  <FONT FACE="Arial" SIZE="2" COLOR="#000000">
+   <A HREF="./index.html"><BR>Home</A><BR>
+   <A HREF="./DNDownloads.html"><BR>Software</A><BR>
+   <A HREF="./DNResults1D.html"><BR>1D Deconvolution</A><BR>
+   <A HREF="./DNResults2D.html"><BR>2D Deconvolution</A><BR>
+   <A HREF="./DNResults3D.html"><BR>3D Deconvolution</A><BR>
+   
+   <A HREF="./DNAboutUs.html"><BR>About us</A><BR>
+   <A HREF="./DNLinks.html"><BR>External links</A><BR>
+  </B></FONT>
+ </TD>
+ <TD ALIGN="center" VALIGN="TOP">
+
+  <TABLE ALIGN="center" VALIGN="TOP" WIDTH="512" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+   <TD VALIGN="TOP"><CENTER><FONT FACE="Times New Roman" SIZE="5" COLOR="#800080"><I><B>Deconvolve .Net</B></I></FONT><BR>
+   <FONT FACE="Times New Roman" SIZE="4" COLOR="#AA0000"><B>Free Software and Information</B><P></FONT></CENTER>
+
+    <TABLE ALIGN="center" VALIGN="TOP" WIDTH="64" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+     <TD ALIGN="center" VALIGN="MIDDLE">
+      <IMG SRC="./Images/AOrig.jpg" width="64" height="70" BORDER=0 ALT="Convolution"></TD>
+     <TD ALIGN="center" VALIGN="MIDDLE">
+      <IMG SRC="spix.png" BORDER=0 ALT="" HEIGHT="0" WIDTH="6" ALIGN="ABSMIDDLE"></TD>
+     <TD ALIGN="center" VALIGN="MIDDLE">
+      <IMG SRC="./Images/Arrow.png" BORDER=0 ALT="deconvolved into ..."></TD>
+     <TD ALIGN="center" VALIGN="MIDDLE">
+      <IMG SRC="spix.png" BORDER=0 ALT="" HEIGHT="0" WIDTH="6" ALIGN="ABSMIDDLE"></TD>
+     <TD ALIGN="center" VALIGN="MIDDLE">
+      <IMG SRC="./Images/ADecon.jpg"  width="64" height="70" BORDER=0 ALT="Deconvolution"><BR>
+     </TD>
+    </TABLE><BR>
+
+    <FONT FACE="Arial" SIZE="2" COLOR="#CC3333"><B>This site enables you to:</B></FONT><BR>
+    <UL TYPE="DISC" ALIGN="justify">
+     <LI><B>Download free software</B> - powerful 64-bit deconvolution software in the <I>BiaQIm image processing suite</I> (BIPS). Cross platofrm and open source. Written in C woth Open MP support for multi-CPU processing.
+     <LI><B>Learn about deconvolution</B> - a restoration process useful in astronomy, microscopy, photography, forensics, spectroscopy and other areas.
+     <LI><B>Download practical demos</B> - example images and batch files to show you how to use the software.<P>
+    </UL>
+
+    <P  ALIGN="justify">
+    <FONT FACE="Arial" SIZE="2" COLOR="#CC3333"><B>What is Deconvolution?</B></FONT><BR>
+    <FONT FACE="Arial" SIZE="2" COLOR="#000000"><A HREF="http://en.wikipedia.org/wiki/Deconvolution" TARGET="NEW"><B><I>Deconvolution</A> is a process designed to remove certain degradations from signals</B></I> e.g. to remove blurring from a photograph that was originally taken with the wrong focus (or with camera shake). The ability to re-focus a blurred image after it has been taken (using computational means) can be extremely useful e.g. for forensic analysis of CCTV footage or in other situations where you cannot easily go back and take the picture again. The following paragraphs give a brief overview of the subject with some key words linked to Wikipedia articles<BR>Signals may be 1-dimensional (e.g. infrared spectra or sound waveforms), 2-dimensional (e.g. digital images), 3-dimensional (e.g. microscope through-focus volumes or 'Z-stacks'), or higher dimensional signals (e.g. a series of 3D volumes taken at sequential time points). The types of degradations that deconvolution aims to reverse are specifically those which may be described by a mathematical process called <A HREF="http://en.wikipedia.org/wiki/Convolution" TARGET="NEW"><I>convolution</I></A>. There are other types of degradations but deconvolution cannot help with those. However, convolutional degradations describe many of the degradations we meet in practice such as out-of-focus blurring, motion blur (e.g. camera shake), diffraction blur and many others. Processes designed to remove degradations from signals in general (not just convolutional degradations) are called 'restoration' processes. Deconvolution is thus a specific example of a restoration process. When dealing with digital images we speak of <I>image restoration</I> or, the more specific, <I>image deconvolution</I>. As deconvolution is a process that tries to find the state of a signal before some degradation occurred, starting from the degraded signal, deconvolution can be categorised as a solution to an <A HREF="http://en.wikipedia.org/wiki/Inverse_problem" TARGET="NEW"><I>inverse problem</I></A> and the mathematics of inverse problems are relevant to understanding and devising deconvolution algorithms.</FONT><BR>
+    </P>
+
+    <TABLE ALIGN="justify" VALIGN="TOP" WIDTH="512" BORDER="0" CELLPADDING="0" CELLSPACING="4">
+     <TD ALIGN="justify">
+      <FONT FACE="Arial" SIZE="2" COLOR="#000000">An example of image deconvolution is seen in the figure at the top of this page. On the left is a blurred version of a 'test card' image made by embellishing a stylised letter 'A' with some dots, lines and highlights and with a variable grey background. This original testcard is shown here on the right.</FONT>
+     </TD>
+     <TD ALIGN="right">
+      <IMG SRC="./Images/Aorig.png"  width="64" height="70" BORDER=0 ALT="original image before convolution"><BR>
+    </TD>
+    </TABLE><BR>
+
+    <P  ALIGN="justify">
+    <FONT FACE="Arial" SIZE="2" COLOR="#000000">Now, if you refer back to the top of this page, the image on the right is the result of applying a deconvolution algorithm to the blurred image and shows that much of the fine detail of the test card has been restored. Note also that there are some speckles in the restored image not seen in the original test card. This is an example of <I>deconvolution artefacts</I> that are an unwanted 'side-effect' of deconvolution. For more details on this example visit the 'Results' page of <a href="https://www.bialith/index.html" TARGET=_new>www.Bialith.com</a> where you can see an animation of the deconvolution process and learn more about deconvolution artefacts and how to minimise them. Further examples will also be given as you explore the results shown in this website. Now for some information about convolution.</FONT>
+    </P> 
+
+    <P  ALIGN="justify">
+    <FONT FACE="Arial" SIZE="2" COLOR="#CC3333"><B>Convolution and the Point Spread Function (PSF)</B></FONT><BR>
+    <FONT FACE="Arial" SIZE="2" COLOR="#000000">Given that deconvolution 'undoes' convolution, we need to understand what convolution is if we are to fully understand deconvolution. <I><B><A HREF="http://en.wikipedia.org/wiki/Convolution" TARGET="NEW">Convolution</A> is a process that 'mixes-up' two signals is a specific way</I></B>. In essence, every point in signal 1 (call this <I>f</I>) is converted into a copy of signal 2 (call this <I>h</I>). Each such copy has overall integrated intensity equal to the intensity of the single point in <I>f</I> from which it was made. All these copies are then superimposed onto each other to create the resulting convolved signal (<I>g</I> - see the figure below). The process of convolution is often represented by an asterisk (*).<BR><IMG SRC="./Images/Convolve.png" BORDER=0 ALT="(Convolution)"><BR>This is why convolution is sometimes also known as <I>the superposition integral</I> and deconvolution is sometimes also called <I>signal separation</I>. Given this description, <I>h</I> is conventionally called the <A HREF="http://en.wikipedia.org/wiki/Point_spread_function" TARGET="NEW"><I>point spread function</I></A> (or PSF) because it determines how each and every point in <I>f</I> is 'spread out' into a copy of the PSF. However, convolution is commutative - this means that <I>f</I> can just as correctly be described as the PSF w.r.t. <I>h</I> (so <I>f</I>*<I>h</I>=<I>h</I>*<I>f</I>). Convolution is thus a very specific and relatively simple mathematical process and, as such, it is quite remarkable that so many natural degradations can be described by this same process.<BR>In the above description of the convolution process (and in the figure) it was assumed that the same PSF is used at all points in <I>f</I>. This is often the case in theoretical examples and is called <I>spatially invariant PSF convolution</I>. However, in most real-world examples, the PSF changes (often gradually) with position in <I>f</I> so the degraded image is the result of a <I>spatially variant PSF convolution</I>. There are correspondingly different types of deconvolution algorithm that may be used to recover the unconvolved image.</FONT>
+    </P>
+ 
+    <P  ALIGN="justify">
+    <FONT FACE="Arial" SIZE="2" COLOR="#CC3333"><B>Subtypes of Deconvolution</B></FONT><BR>
+    <FONT FACE="Arial" SIZE="2" COLOR="#000000">If the PSF is known in advance, <I>non-blind</I> deconvolution processes may be used and these can be further subdivided into <I>spatially invariant</I> and <I>spatially variant</I> types of deconvolution according to whether the PSF is the same throughout or not. In these circumstances (with regards to image deconvolution) you start with the blurred image and known PSF (or PSFs if spatially variant) and try to calculate the un-blurred image from them.<BR>If the PSF is not known in advance then one needs to use a different class of deconvolution algorithms known as <I>blind deconvolution</I> (or <I>blind source separation</I>) and these also have spatially variant or invariant subtypes depending on the convolution model. Blind deconvolution is a harder inverse problem as all you have to go on is the blurred image and from that you must work out the unblurred image. This would be impossible if you did not have additional information about the convolution to provide <I>constraints</I> on the solution. In fact, constraints are often necessary even for non-blind deconvolution as often no unique solution exists, even in the absence of noise and more so in its presence.<BR>Finally, you may only partially know the PSF (you may have some initial estimate that may have been derived by measurements, for example). Under these circumstances you can use methods known as <I>myopic deconvolution</I> which aim to refine both the estimate of the unconvolved image and the estimate of the PSF at the same time.</FONT>
+    </P> 
+
+    <P  ALIGN="justify">
+    <FONT FACE="Arial" SIZE="2" COLOR="#CC3333"><B>Deconvolution Software</B></FONT><BR>
+    <FONT FACE="Arial" SIZE="2" COLOR="#000000">This site offers free and <I>open source</I> deconvolution software called the <B><I>BiaQIm image processing suite</I></B> or 'BIPS'. However, there are already many software packages that provide some kind of deconvolution facility so how can you choose between them? Commercial software is often expensive but comes with warranty, support, detailed user manuals (and maybe company representatives giving demos on site or courses on use) and a whole graphical user environment designed to help manage image data or control hardware systems that generate the images. Such software usually offers non-blind spatially invariant deconvolution (at the time of writing - 25.3.2024 - I know of only one example that offers a blind option and one other that offirs limited spatial variance in the PSF). The less expensive commercial solutions are usually more restricted in their abilities or support. Free deconvolution software (such as the <I>BIPS</I>) can be more flexible, i.e. can have more deconvolution options, than commercial software but is usually less well supported. However, one of the major limitations of commercial software, apart from the expense, is that much of it is closed source and so is effectively 'black box' software which can be seen as a significant limitation for its use in open transparent and reproducible scientific work.<BR>
+    The <I>BIPS</I> offers a wide variety of deconvolution algorithms, many of which can be used with advanced acceleration techniques, and which are available in native 64 bit and multi-core parallel processor capable executables. Perhaps even more importantly, the BIPS isopen source so the source code is also available. There is no secret about how it works - in every minute detail - so it is not 'black box' software and therefore is more suitable for transparent scientific work and peer-reviewed publications as well as being customisable).<BR>
+    Furthermore the BIPS software allows for blind deconvolution (via a number of different methods) and even for arbitrarily spatially variant PSF deconvolution - something which, at the time of writing, I am not aware that any commercial solution offers.<BR>
+    The <I>BiaQIm image processing suite</I> also comes with user manuals including step-by-step demonstration guides and the demos downloadable from this site enable you to see just how to use the software in various situations. To see example results obtained with this software just click on the links in the main menu of this website for 1D, 2D and 3D deconvolution. On the 'down-side' the free deconvolution software offerred here is mainly command-line driven (although a limited GUI interface is provided) and this is experimental software written by an individual scientist with many years of experience in the field but not by a team of professional programmers, so does not come with any warranties. There is also no techincal helpline or product support beyond the manuals and demos already provided.<BR></FONT>
+    </P>
+ 
+    <P  ALIGN="justify">
+    <FONT FACE="Arial" SIZE="2" COLOR="#CC3333"><B>Convolution and Deconvolution can Perform the Same Function</B></FONT><BR>
+    <FONT FACE="Arial" SIZE="2" COLOR="#000000">In the above descriptions of deconvolution and convolution, I referred to convolution as producing degradations and deconvolution as the process that removes these degradations. However, it is not true that convolution always results in degradation of a signal or that it always results in blurring of some kind. In fact, with the 'right' PSF, convolution can result is sharpening of an image and a simple convolution (with the appropriate PSF, called an <I>inverse filter</I>) can even result in a deconvolution of a previous degradation. Thus convolution and deconvolution can, in certain circumstances, be the same procedure.<BR></FONT>
+    </p>
+ 
+   </TD>
+  </TABLE>
+<TABLE ALIGN="center" WIDTH="512" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+ <TD>
+  <HR WIDTH="100%" SIZE="3" NOSHADE>
+
+  <CENTER>
+   <FONT SIZE="2" COLOR=#000000 FACE="VERDANA, ARIAL"><B>Copyright (c) 2010-2026 Dr Paul J. Tadrous</B></FONT><BR>
+   <FONT SIZE="2" COLOR=#999999 FACE="VERDANA, ARIAL">
+        <A HREF="./index.html">Home</A> | 
+        <A HREF="./DNAboutUs.html">Contact Us</A> | 
+        <A HREF="./DNDisclaimer.html">Disclaimer</A>
+        
+
+   </FONT>
+  </CENTER>
+</TD>
+</TABLE>
+ </TD>
+ 
+
+</TABLE>
+
+
+</BODY>
+</html>

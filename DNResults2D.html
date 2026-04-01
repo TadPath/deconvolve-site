@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<HEAD>
+<link rel="icon" href="http://www.deconvolve.net/favicon.ico" type="image/png" />
+<link rel="shortcut icon" href="http://www.deconvolve.net/favicon.ico" type="image/png" />
+<TITLE>Deconvolution Results 2D</TITLE>
+<META NAME="Description" CONTENT="Deconvolve images with the free deconvolution software BiaQIm IP Suite. Uses include astronomy, photography, forensics and microscopy.">
+<META NAME="Keywords" CONTENT="deconvolution, deconvolution software, deconvolve, deblur, de-blur, deblurring, de-blurring, camera shake, freeware, blind deconvolution, spatially variant PSF, point spread function, PSF, convolution, digital image, microscopy, astronomy, optical sectioning microscopy, confocal microscopy, deconvolution microscopy, volume visualisation, haze removal, forensic, photography, Biggs, Lucy-Richardson, Landweber, maximum entropy, van Cittert, confocal, Tadrous, BiaQIm, Biaram, FATCAM, Bialith">
+<link rel="icon" href="./favicon.png" /> 
+<link rel="shortcut icon" href="./favicon.png" /> 
+</HEAD>
+
+<BODY BGCOLOR="#C0C0FF" TEXT="#000000" LINK="#660000" ALINK="#FF0000" VLINK="#800080">
+
+<TABLE WIDTH="640" BORDER="0" CELLPADDING="4" CELLSPACING="0">
+ <TD ALIGN="left" VALIGN="TOP"><LEFT>
+  <IMG SRC="./Images/Mascot64.jpg" BORDER=0 ALT="Deconvolution software"><BR>
+  <FONT FACE="Times New Roman" SIZE="4" COLOR="#000000"><B>Main Menu</B></FONT><P>
+  <FONT FACE="Arial" SIZE="2" COLOR="#000000">
+   <A HREF="./index.html"><BR>Home</A><BR>
+   <A HREF="./DNDownloads.html"><BR>Software</A><BR>
+   <A HREF="./DNResults1D.html"><BR>1D Deconvolution</A><BR>
+   <A HREF="./DNResults2D.html"><BR>2D Deconvolution</A><BR>
+   <A HREF="./DNResults3D.html"><BR>3D Deconvolution</A><BR>
+   
+   <A HREF="./DNAboutUs.html"><BR>About us</A><BR>
+   <A HREF="./DNLinks.html"><BR>External links</A><BR>
+  </B></FONT>
+ </TD>
+ <TD ALIGN="center" VALIGN="TOP">
+  <TABLE ALIGN="center" VALIGN="TOP" WIDTH="512" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+   <TD VALIGN="TOP"><CENTER><FONT FACE="Times New Roman" SIZE="5" COLOR="#800080"><I><B>Deconvolve .Net</B></I></FONT><BR>
+   <FONT FACE="Times New Roman" SIZE="4" COLOR="#AA0000"><B>Results with 2D Images</B><P></FONT></CENTER>
+
+    <TABLE ALIGN="center" VALIGN="TOP" WIDTH="512" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+     <TD ALIGN="Left" VALIGN="MIDDLE">
+      <FONT FACE="Arial" SIZE="2" COLOR="#CC3333"><B>Restoring focus to a blurred image</B></FONT><BR>
+      <IMG SRC="./Images/MyopicVar.jpg" BORDER=0 ALT="Deconvolution software results for a blurred image of a clock">
+     </TD>
+    </TABLE>
+
+    <P  ALIGN="justify"><FONT FACE="Arial" SIZE="2" COLOR="#000000">The figure above shows the results of using the <I>BiaQIm image processing suite</I> to 're-focus' an image of a clock that was taken with the camera lens out-of-focus. On the left is the original blurred image. The middle figure shows the results of applying non-blind saptially invariant PSF iterative deconvolution algorithm, using 64 iterations of the Biggs-accelerated Lucy-Richardson algorithm. The image has essentially been brought back into focus to the extent where you can now see not just the main numerals on the clock but also most of the fine minute divisions at the periphery. Note the ripples emanating from the dark clock handles. This is an example of a deconvolution artefact called <I>ringing</I>. Such ringing artefacts may partly be due to an imperfect PSF and the PSF used in this non-blind deconvolution was made by measurements on the camera that took the blurred picture (for more details about this and to see further examples, visit the 'Results' page of <a href="https://www.bialith/index.html" TARGET=_new>www.Bialith.com</a>).<BR>There are a number of ways to ameliorate ringing artefacts. One way is to refine the estimate of the PSF using myopic deconvolution. In the image on the right I have applied spatially variant myopic deconvolution to improve the estimate of the PSF at different locations in the image. This has reduced the ringing but not completely removed it. The lower the proportion of the solution energy is taken up by ringing artefacts, the greater the proportion that can be channelled into recovering the deconvolved solution. Hence effective measures to reduce ringing often produce more accurate deconvolution results. The fact that the ringing reduction is incomplete here may partly be due to me not using the 'best' parameters and constraints when setting up the spatially variant deconvolution. How to determine what is 'best' in this type of deconvolution is subject to ongoing research. Although this data is not provided in the demos downloadable from this site, you may download the blurred clock and PSF from <a href="https://www.bialith/index.html" TARGET=_new>www.Bialith.com</a> if you want to try doing this experiment yourself.<BR></FONT>
+    </P>
+    
+    <TABLE ALIGN="center" VALIGN="TOP" WIDTH="512" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+      <FONT FACE="Arial" SIZE="2" COLOR="#CC3333"><B>Restoring optical aberration with spatially variant PSF deconvolution</B></FONT><BR>
+      <TD ALIGN="center" VALIGN="MIDDLE"><IMG SRC="./Images/RosettaCV.jpg" BORDER=0 ALT="Spatially variant PSF blur"></TD>
+      <TD ALIGN="center" VALIGN="MIDDLE"><IMG SRC="./Images/Arrow.png" BORDER=0 ALT="deconvolved into ..."></TD>
+      <TD ALIGN="center" VALIGN="MIDDLE"><IMG SRC="./Images/RosettaDC.jpg" BORDER=0 ALT="Spatially variant deconvolution"></TD>
+      <TD ALIGN="center" VALIGN="MIDDLE">
+      <IMG SRC="spix.png" BORDER=0 ALT="" HEIGHT="0" WIDTH="180" ALIGN="ABSMIDDLE"></TD>
+
+    </TABLE>
+
+    <P  ALIGN="justify"><FONT FACE="Arial" SIZE="2" COLOR="#000000">Above left is a portion of the rosetta stone blurred with a PSF kernel that gets larger as one goes further from the centre of the field. This simulates a kind of spherical aberration as seen with some lenses (e.g. microscope objective lenses). To correct this type of spatially variant blur you need to use spatially variant deconvolution and to the right you can see the results of applying an iterative spatially variant algorithm that is available in the <I>BiaQIm image processing suite</I>. More information on this example and other examples of spatially variant deconvolution can be seen at <a href="https://www.bialith/index.html" TARGET=_new>www.Bialith.com</a>.<BR></FONT>
+    </P>
+    <P>
+    <TABLE ALIGN="center" VALIGN="TOP" WIDTH="512" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+     <TD ALIGN="Left" VALIGN="MIDDLE">
+      <FONT FACE="Arial" SIZE="2" COLOR="#CC3333"><B>Blind deconvolution - restoring image and PSF simultaneously</B></FONT><BR>
+      <IMG SRC="./Images/Blind.jpg" BORDER=0 ALT="Blind deconvolution">
+     </TD>
+    </TABLE>
+    </P>
+
+    <P  ALIGN="justify"><FONT FACE="Arial" SIZE="2" COLOR="#000000">Above is a demonstration of the results seen using the Biggs-Andrews blind deconvolution method as implemented by the <I>BiaQIm image processing suite</I>. This method alternates between image restoration cycles and PSF restoration cycles and the <I>BiaQIm image processing suite</I> allows the blance of these cycles to be varied throughout the deconvolution procedure (at the time of writing - 25.5.2010 - I am unaware of any other software, whether commercial or free, that allows this). This data is available to download as one of the demo packages so you can try this out for yourself. The main figure is the residuals graph showing residual plotted against iteration (64 iterations in total are used here). Inset are the images. At the top are the ground truth data for image (left) and PSF (right). These ground truth images are not available to the algorithm but are shown here for comparason purposes. The actual input images to the blind deconvolution algorithm are shown in the middle - the blurred image (left) and our initial guess at the PSF (which is a simple flat square, right). The results of the blind deconvolution for image (left) and PSF (right) are shown at the bottom. The solution is good but note how the convergence is complex. Further examples of blind image deconvolution may be seen at <a href="https://www.bialith/index.html" TARGET=_new>www.Bialith.com</a>.<BR></FONT>
+    </P>
+   </TD>
+  </TABLE><BR>
+<TABLE ALIGN="center" WIDTH="512" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+ <TD>
+  <HR WIDTH="100%" SIZE="3" NOSHADE>
+  <CENTER>
+   <FONT SIZE="2" COLOR=#000000 FACE="VERDANA, ARIAL"><B>Copyright (c) 2010-2026 Dr Paul J. Tadrous</B></FONT><BR>
+   <FONT SIZE="2" COLOR=#999999 FACE="VERDANA, ARIAL">
+        <A HREF="./index.html">Home</A> | 
+        <A HREF="./DNAboutUs.html">Contact Us</A> | 
+        <A HREF="./DNDisclaimer.html">Disclaimer</A>
+        
+   </FONT>
+ </TD>
+</TABLE>
+ </TD>
+ 
+
+</TABLE>
+
+
+</BODY>
+</html>

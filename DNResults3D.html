@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<HEAD>
+<link rel="icon" href="http://www.deconvolve.net/favicon.ico" type="image/png" />
+<link rel="shortcut icon" href="http://www.deconvolve.net/favicon.ico" type="image/png" />
+<TITLE>Deconvolution Microscopy 3D</TITLE>
+<META NAME="Description" CONTENT="Deconvolve 3D volumes with the free deconvolution software BiaQIm IP Suite. Used in deconvolution microscopy (confocal, fluorescence and brightfield)">
+<META NAME="Keywords" CONTENT="deconvolution, deconvolution software, deconvolve, deblur, de-blur, deblurring, de-blurring, camera shake, freeware, blind deconvolution, spatially variant PSF, point spread function, PSF, convolution, digital image, microscopy, astronomy, optical sectioning microscopy, confocal microscopy, deconvolution microscopy, volume visualisation, haze removal, forensic, photography, Biggs, Lucy-Richardson, Landweber, maximum entropy, van Cittert, confocal, Tadrous, BiaQIm, Biaram, FATCAM, Bialith">
+<link rel="icon" href="./favicon.png" /> 
+<link rel="shortcut icon" href="./favicon.png" /> 
+</HEAD>
+
+<BODY BGCOLOR="#C0C0FF" TEXT="#000000" LINK="#660000" ALINK="#FF0000" VLINK="#800080">
+
+<TABLE WIDTH="640" BORDER="0" CELLPADDING="4" CELLSPACING="0">
+ <TD ALIGN="left" VALIGN="TOP"><LEFT>
+  <IMG SRC="./Images/Mascot64.jpg" BORDER=0 ALT="Deconvolution software"><BR>
+  <FONT FACE="Times New Roman" SIZE="4" COLOR="#000000"><B>Main Menu</B></FONT><P>
+  <FONT FACE="Arial" SIZE="2" COLOR="#000000">
+   <A HREF="./index.html"><BR>Home</A><BR>
+   <A HREF="./DNDownloads.html"><BR>Software</A><BR>
+   <A HREF="./DNResults1D.html"><BR>1D Deconvolution</A><BR>
+   <A HREF="./DNResults2D.html"><BR>2D Deconvolution</A><BR>
+   <A HREF="./DNResults3D.html"><BR>3D Deconvolution</A><BR>
+   
+   <A HREF="./DNAboutUs.html"><BR>About us</A><BR>
+   <A HREF="./DNLinks.html"><BR>External links</A><BR>
+  </B></FONT>
+ </TD>
+ <TD ALIGN="center" VALIGN="TOP">
+  <TABLE ALIGN="center" VALIGN="TOP" WIDTH="512" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+   <TD VALIGN="TOP"><CENTER><FONT FACE="Times New Roman" SIZE="5" COLOR="#800080"><I><B>Deconvolve .Net</B></I></FONT><BR>
+   <FONT FACE="Times New Roman" SIZE="4" COLOR="#AA0000"><B>Results with 3D Volumes</B><P></FONT></CENTER>
+
+    <TABLE ALIGN="center" VALIGN="TOP" WIDTH="512" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+     <TD ALIGN="Left" VALIGN="MIDDLE">
+      <FONT FACE="Arial" SIZE="2" COLOR="#CC3333"><B>Optical sectioning microscopy - brightfield and fluorescence</B></FONT><BR>
+      <IMG SRC="./Images/DCPlasi3Dc.jpg" BORDER=0 ALT="deconvolution microscopy volume rendering">
+      <IMG SRC="spix.png" BORDER=0 ALT="" HEIGHT="0" WIDTH="40" ALIGN="ABSMIDDLE">
+      <IMG SRC="./Images/DCPlasiXYZ.jpg" BORDER=0 ALT="optical sectioning microscopy YZ slice">
+     </TD>
+    </TABLE>
+
+    <P  ALIGN="justify"><FONT FACE="Arial" SIZE="2" COLOR="#000000"><I>Optical sectioning microscopy</I> is the process of getting thin optical sections through a thick specimen on a microscope by abrogating the effects of out-of-focus light coming from different depth planes in the specimen. This may be achieved by optomechanical (e.g. <I>confocal microscopy</I>) or computational (e.g. <I>deconvolution microscopy</I>) means. Optical sectioning in fluorescence microscopy is a well-established subject and most of the commercial microscopy deconvolution software currently available is geared towards this process. However it is hard to find any examples of software designed for brightfield microscopy that do not involve blind deconvolution. The main reason for this is that brightfield microscopy is a more complex imaging model than fluorescence and it is particularly difficult to measure the brightfield PSF (hence the use of blind methods for this modality). However, using recent developments in the field (see <a href="https://doi.org/10.1111/j.1365-2818.2009.03323.x" target="new"><I>J Microsc.</I> 2010 Feb;<B>237</B>(2):192-9.</a>), I have modified non-blind deconvolution to be useful for optical sectioning of brightfield microscopy and the programs needed to do this are uniquely included in the free software distribution available via this website.<BR>The figures above show the results of applying the 3D brightfield microscopy deconvolution method to a through-focus stack (i.e. a Z-stack) of images of a whole plasma cell as seen in a 10 micron thick section of tissue stained with haematoxylin. The result took just 320 accelerated Lucy-Richardson iterations on 256x256x256 voxel volume (this took about 30 minutes on a quad-core 3.0GHz 64 bit Pentium 4 PC using the native 64 bit parallel version of the program). The upper figure shows three orthogonal planes in a 3D rendering made using the FATCAM software (which is included in the free software package available via this website) - on the left is the original volume showing characteristic smearing in Z, on the right is the deconvolved result showing improved discrimination of nuclear chromatin and cytoplasmic structures. The lower figure shows a single XY slice (middle) and two YZ slices through the 3D data before (top) and after (bottom) deconvolution. Haze is reduced and the 3D structure is largely restored with few deconvolution artefacts. Restoration is not complete, however, as there are other factors to consider with brightfield restoration and these are currently being investigated</FONT>
+    </P>
+
+    <TABLE ALIGN="center" VALIGN="TOP" WIDTH="512" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+      <FONT FACE="Arial" SIZE="2" COLOR="#CC3333"><B>Restoring a bilayered vesicle test object</B></FONT><BR>
+      <TD ALIGN="center" VALIGN="MIDDLE">
+        <IMG SRC="./Images/dctest2Dfig.jpg" BORDER=0 ALT="Deconvolution of vesicle, 2D slices">
+        <IMG SRC="./Images/dctest3dfig.jpg" BORDER=0 ALT="Deconvolution of vesicle 3D rendering">
+      </TD>
+    </TABLE>
+
+    <P  ALIGN="justify"><FONT FACE="Arial" SIZE="2" COLOR="#000000">Above is illustrated the deconvolution of a synthetic 3D dark-field test object which you can download via this website as one of the demo packages. The test object is a bilayered vesicle with the inner layer of the vesicle being brighter than the outer layer and with an ovoid solid 'bead' object overlapping the inner layer and resting on the outer layer. In addition, the background to this object is not completely black but is a shade of grey. The PSF is not illustrated but it is an asymmetrical small object which is shaped like a ping-pong ball with a dent in it. Intensities in these figures have been gamma adjusted for display purposes. The top figure shows a 2D XY slice through the 3D volume: left is the original object, middle is the blurred object, right is the deconvolution result showing good recovery of details with only minor ringing seen at the inner periphery of the 'bead'. The lower figure shows a 3D rendering in pseudocolour of this same object (using FATCAM) where the volume is actually a composite of the blurred object (bottom and left part of the volume) spliced to the deconvolved object (top and right part of the volume): left is a full-face XY view, middle and right are two different angles (part of the vesicle has been removed for clarity of visualisation, in reality this is a completely closed structure). <BR>The fact that the background of this test object is non-zero was a deliberate design feature as this tests the robustness of deconvolution to ringing. The method used here was an iterative accelerated Lucy-Richardson algorithm over 64 iterations (this took about 13 minutes in a single core 32 bit 3.0GHz Pentium 4 PC). The method was, however, set to cope with the non-zero background. If this setting is not used the result shows the excesive ringing expected (as shown below).<BR></FONT>
+        <IMG SRC="./Images/dctest2dfignobg.jpg" BORDER=0 ALT="Deconvolution of vesicle 3D rendering">
+    </P>
+   </TD>
+  </TABLE><BR>
+<TABLE ALIGN="center" WIDTH="512" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+ <TD>
+  <HR WIDTH="100%" SIZE="3" NOSHADE>
+  <CENTER>
+   <FONT SIZE="2" COLOR=#000000 FACE="VERDANA, ARIAL"><B>Copyright (c) 2010-2026 Dr Paul J. Tadrous</B></FONT><BR>
+   <FONT SIZE="2" COLOR=#999999 FACE="VERDANA, ARIAL">
+        <A HREF="./index.html">Home</A> | 
+        <A HREF="./DNAboutUs.html">Contact Us</A> | 
+        <A HREF="./DNDisclaimer.html">Disclaimer</A>
+        
+   </FONT>
+ </TD>
+</TABLE>
+ </TD>
+ 
+
+</TABLE>
+
+
+</BODY>
+</html>
